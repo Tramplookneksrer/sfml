@@ -37,31 +37,6 @@ String TileMap[H] = {
 "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
 };
 
-
-/*void  Menu_Control(RenderWindow &window, Event &event, bool &play)
-{
-	extern int menu_but_pos;
-	if (Keyboard::isKeyPressed(Keyboard::Down) && menu_but_pos != 3)
-	    menu_but_pos +=1;
-	else if (Keyboard::isKeyPressed(Keyboard::Up) && menu_but_pos != 1)    
-	    menu_but_pos -=1;
-	else if (Keyboard::isKeyPressed(Keyboard::Space) && menu_but_pos == 1)
-	    play = true;
-	else if (Keyboard::isKeyPressed(Keyboard::Space) && menu_but_pos == 1)  
-	    window.close();          
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
 /*class LifeBar
 {
 public:
@@ -144,9 +119,9 @@ float currentFrame;
 void menu(RenderWindow & window,bool & end)
 {
     Texture Texturemenu1,Texturemenu2,menuBackground;
-    Texturemenu1.loadFromFile("gg.png");
-    Texturemenu2.loadFromFile("gg1.png");
-    menuBackground.loadFromFile("fon.jpg");
+    Texturemenu1.loadFromFile("1.png");
+    Texturemenu2.loadFromFile("2.png");
+    menuBackground.loadFromFile("f2.jpg");
     Sprite menu1(Texturemenu1), menu2(Texturemenu2), fon(menuBackground);
     bool isMenu = 1;
     int menNum = 0;
@@ -162,7 +137,7 @@ while (isMenu)
     menu2.setColor(Color::White);
     menu1.setColor(Color::White);
     menu2.setColor(Color::White);
-    if (IntRect(600, 200, 150, 150).contains(Mouse::getPosition(window))) { menu1.setColor(Color::Red); menNum = 1; }
+    if (IntRect(600, 200, 150, 150).contains(Mouse::getPosition(window))) { menu1.setColor(Color::Blue); menNum = 1; }
     if (IntRect(600, 400, 150, 150).contains(Mouse::getPosition(window))) { menu2.setColor(Color::Red); menNum = 2; }
     if (Mouse::isButtonPressed(Mouse::Left))
     {
